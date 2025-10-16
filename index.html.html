@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSC Growth Capital Opportunity</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+        
+        .slides-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .slide {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+            border-radius: 0;
+            padding: 80px;
+            margin-bottom: 30px;
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+            border-top: 4px solid #d4691e;
+            position: relative;
+        }
+        
+        .brand-watermark {
+            position: absolute;
+            bottom: 30px;
+            right: 40px;
+            font-size: 12px;
+            color: #444;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        
+        .slide-number {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 14px;
+            color: #666;
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-size: 56px;
+            margin-bottom: 20px;
+            color: #d4691e;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        
+        h2 {
+            font-size: 42px;
+            margin-bottom: 40px;
+            color: #d4691e;
+            border-bottom: 3px solid #d4691e;
+            padding-bottom: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        h3 {
+            font-size: 26px;
+            margin: 30px 0 20px 0;
+            color: #e8945f;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .subtitle {
+            font-size: 24px;
+            color: #999;
+            margin-bottom: 15px;
+            font-weight: 300;
+        }
+        
+        .tagline {
+            font-size: 20px;
+            color: #666;
+            font-style: italic;
+            margin-top: 20px;
+            font-weight: 300;
+        }
+        
+        .date {
+            font-size: 18px;
+            color: #555;
+            margin-top: 40px;
+        }
+        
+        .content-box {
+            background: rgba(212, 105, 30, 0.08);
+            padding: 35px;
+            border-radius: 0;
+            margin: 25px 0;
+            border-left: 5px solid #d4691e;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin: 30px 0;
+        }
+        
+        .column {
+            background: rgba(255,255,255,0.03);
+            padding: 30px;
+            border-radius: 0;
+            border-top: 2px solid #d4691e;
+        }
+        
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        li {
+            padding: 14px 0;
+            padding-left: 35px;
+            position: relative;
+            line-height: 1.7;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        li:before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: #d4691e;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #d4691e 0%, #b85a1a 100%);
+            color: #fff;
+            padding: 35px;
+            border-radius: 0;
+            margin: 30px 0;
+            font-weight: 600;
+            font-size: 22px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 5px 20px rgba(212, 105, 30, 0.3);
+        }
+        
+        .stat {
+            font-size: 54px;
+            font-weight: 700;
+            color: #d4691e;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .stat-label {
+            font-size: 16px;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            background: rgba(255,255,255,0.03);
+        }
+        
+        th {
+            background: #d4691e;
+            color: #fff;
+            padding: 18px;
+            text-align: left;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 14px;
+        }
+        
+        td {
+            padding: 18px;
+            border-bottom: 1px solid #333;
+            font-weight: 300;
+        }
+        
+        tr:hover {
+            background: rgba(212, 105, 30, 0.1);
+        }
+        
+        .brand-logo {
+            display: inline-block;
+            background: rgba(212, 105, 30, 0.15);
+            padding: 12px 24px;
+            border-radius: 0;
+            margin: 12px;
+            font-weight: 600;
+            border: 2px solid #d4691e;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+        
+        .navigation {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            display: flex;
+            gap: 15px;
+            z-index: 100;
+        }
+        
+        .nav-btn {
+            background: #d4691e;
+            color: #fff;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 0;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(212, 105, 30, 0.3);
+        }
+        
+        .nav-btn:hover {
+            background: #b85a1a;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(212, 105, 30, 0.4);
+        }
+        
+        .nav-btn:disabled {
+            background: #333;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+        
+        .portland-accent {
+            font-style: italic;
+            color: #d4691e;
+            font-weight: 600;
+        }
+        
+        strong {
+            color: #e8945f;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="slides-container">
+        <!-- Slide 1: Title -->
+        <div class="slide">
+            <h1>Bridgetown Spirits Corp</h1>
+            <div class="subtitle">Growth Capital Opportunity</div>
+            <div class="tagline">Opportunistic Brand Acquisition & Portfolio Consolidation</div>
+            <div class="tagline" style="margin-top: 40px; font-size: 18px;">
+                <span class="portland-accent">Portland's Premium Craft Spirits Heritage</span> | Asset-Light Operating Model
+            </div>
+            <div class="date">September 2025</div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 2: Executive Summary -->
+        <div class="slide">
+            <div class="slide-number">02</div>
+            <h2>Investment Thesis</h2>
+            <div class="content-box">
+                <p style="font-size: 20px; line-height: 1.9; margin-bottom: 20px; font-weight: 300;">
+                    The spirits industry is experiencing significant distress, creating unprecedented opportunities to acquire premium brands at substantial discounts to invested capital. Bridgetown Spirits Corp's <span class="portland-accent">Portland-proven</span> asset-light operating model transforms distressed brands into profitable businesses by eliminating production overhead and leveraging shared distribution infrastructure.
+                </p>
+            </div>
+            <div class="two-column" style="margin-top: 40px;">
+                <div class="column">
+                    <div class="stat">70-80%</div>
+                    <div class="stat-label">Cost Reduction Potential</div>
+                </div>
+                <div class="column">
+                    <div class="stat">9+ States</div>
+                    <div class="stat-label">Established Distribution</div>
+                </div>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 3: The Problem -->
+        <div class="slide">
+            <div class="slide-number">03</div>
+            <h2>Market Dislocation Creates Opportunity</h2>
+            <h3>Industry Headwinds</h3>
+            <ul>
+                <li>Spirits sales under pressure across all categories</li>
+                <li>Loss making producers facing margin compression</li>
+                <li>Premium brands burdened with expensive production assets and overhead</li>
+                <li>Limited exit opportunities for distressed brands</li>
+            </ul>
+            <div class="highlight-box" style="margin-top: 50px;">
+                Result: High-quality brands trading at fraction of replacement value
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 4: Recent Example -->
+        <div class="slide">
+            <div class="slide-number">04</div>
+            <h2>Case Study: Westward Whiskey Opportunity</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>The Situation</h3>
+                    <ul>
+                        <li>Diageo-backed brand filed bankruptcy April 2025</li>
+                        <li>$8.7M in liquidation value (barrels, inventory, IP)</li>
+                        <li>Covering bid only $2.6M</li>
+                        <li>Heavy production overhead made brand unprofitable</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>BSC's Analysis</h3>
+                    <ul>
+                        <li>Eliminate tasting room, production, G&A costs</li>
+                        <li>Projected $1M+ annual cash generation</li>
+                        <li>Portfolio upside: $25M+ with repositioning</li>
+                        <li>Low execution risk with proven model</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 5: The BSC Advantage -->
+        <div class="slide">
+            <div class="slide-number">05</div>
+            <h2>The BSC Asset-Light Model</h2>
+            <h3>Traditional Model (What Failed at Westward)</h3>
+            <div class="content-box">
+                <ul>
+                    <li>Own distillery and production equipment</li>
+                    <li>Maintain tasting rooms and retail operations</li>
+                    <li>Carry full G&A and operational overhead</li>
+                    <li><strong>Result:</strong> Break-even or losses even with good brands</li>
+                </ul>
+            </div>
+            <h3>BSC Model - Portland Craft, Lean Operations</h3>
+            <div class="content-box" style="border-left-color: #4CAF50;">
+                <ul>
+                    <li>Outsource production to premium co-packers</li>
+                    <li>Leverage Park Street Marketplace for distribution</li>
+                    <li>Leverage sales asset per market</li>
+                    <li>Direct-to-retail shipping</li>
+                    <li><strong>Result:</strong> Immediate profitability, scalable growth</li>
+                </ul>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 6: Current Portfolio -->
+        <div class="slide">
+            <div class="slide-number">06</div>
+            <h2>Current Brand Portfolio</h2>
+            <div class="tagline" style="margin-bottom: 30px;">"Premium Craft Spirits & Experiential Brands from Portland's Distillery Row"</div>
+            <div style="margin: 40px 0;">
+                <span class="brand-logo">Azunia Tequila</span>
+                <span class="brand-logo">Burnside Bourbon</span>
+                <span class="brand-logo">Portland Potato Vodka</span>
+                <span class="brand-logo">Burnside Whiskey</span>
+            </div>
+            <h3>Strategic Focus</h3>
+            <div class="content-box">
+                <ul>
+                    <li><strong>Premium positioning:</strong> Focus on high-margin SKUs like Azunia Black (2-year añejo)</li>
+                    <li><strong>Distribution reach:</strong> OR, AZ, CA, CO, WA, FL, NY, NJ, NV</li>
+                    <li><strong>Key markets:</strong> Direct-to-retail in CA, NY, NJ, FL via Park Street</li>
+                    <li><strong>Proven model:</strong> Lean operations driving positive cash flow</li>
+                </ul>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 7: Growth Strategy -->
+        <div class="slide">
+            <div class="slide-number">07</div>
+            <h2>Acquisition & Integration Playbook</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Target Categories</h3>
+                    <ul style="font-size: 17px;">
+                        <li><strong>Bourbon & Whiskey:</strong> Primary focus, high-margin aged spirits</li>
+                        <li><strong>Gin:</strong> Craft gins with strong brand stories</li>
+                        <li><strong>Vodka:</strong> Premium positioning, existing synergies</li>
+                        <li>Brands trading at 20-40% of replacement value</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Integration (60-120 days)</h3>
+                    <ul style="font-size: 17px;">
+                        <li>Transfer to co-packer network</li>
+                        <li>Eliminate overhead costs</li>
+                        <li>Integrate into distribution system</li>
+                        <li>Optimize SKU mix for margin</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 40px;">
+                Each acquisition leverages existing infrastructure, creating exponential value
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 8: Portfolio Synergies -->
+        <div class="slide">
+            <div class="slide-number">08</div>
+            <h2>Multi-Brand Portfolio Advantages</h2>
+            <h3>Operational Leverage</h3>
+            <div class="content-box">
+                <ul>
+                    <li><strong>Shared distribution:</strong> Single sales rep sells entire portfolio (bourbon, whiskey, gin, vodka, tequila)</li>
+                    <li><strong>Co-packing efficiency:</strong> Volume discounts across spirits categories</li>
+                    <li><strong>Retail relationships:</strong> Complete bar program solution for accounts</li>
+                    <li><strong>Marketing efficiency:</strong> Cross-promotion and shared campaigns</li>
+                </ul>
+            </div>
+            <h3>Risk Mitigation</h3>
+            <div class="content-box">
+                <ul>
+                    <li>Category diversification (bourbon, whiskey, gin, vodka, tequila)</li>
+                    <li>Geographic diversification across 9 states</li>
+                    <li>Price point diversification (premium to super-premium)</li>
+                    <li>Consumer preference shifts hedged across white and brown spirits</li>
+                </ul>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 9: Financial Model -->
+        <div class="slide">
+            <div class="slide-number">09</div>
+            <h2>$10M Capital Raise: Value Creation Model</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Use of Capital</th>
+                        <th>Allocation</th>
+                        <th>Expected Return</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Brand Acquisitions (3-4 brands)</td>
+                        <td>$6.5-7M</td>
+                        <td>$2.5-4M annual cash flow</td>
+                    </tr>
+                    <tr>
+                        <td>Working Capital & Inventory</td>
+                        <td>$2M</td>
+                        <td>Support operations & growth</td>
+                    </tr>
+                    <tr>
+                        <td>Sales & Distribution Expansion</td>
+                        <td>$1M</td>
+                        <td>Market penetration in 9 states</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="highlight-box" style="margin-top: 35px;">
+                Target: $4-6M in annual EBITDA within 24 months | 3-Year Portfolio Value: $30-40M
+            </div>
+            <p style="margin-top: 25px; font-size: 16px; color: #888; font-weight: 300;">
+                *Based on Westward case study: brands generating negative cash flow become immediately profitable under BSC model
+            </p>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 10: GTM Challenge -->
+        <div class="slide">
+            <div class="slide-number">10</div>
+            <h2>The Distribution Challenge: Winning the Bartender</h2>
+            <div class="content-box">
+                <p style="font-size: 19px; line-height: 1.8; font-weight: 300;">
+                    <strong>Core Insight:</strong> Bartenders are the ultimate gatekeepers. They control what gets poured, recommended, and talked about. Distribution gets you on the shelf—bartender advocacy gets you in the glass.
+                </p>
+            </div>
+            <div class="two-column" style="margin-top: 35px;">
+                <div class="column">
+                    <h3>Traditional Approach Fails</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Generic sales pitches</li>
+                        <li>Price-focused selling</li>
+                        <li>No emotional connection</li>
+                        <li>Competing against big budgets</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>BSC Story-First Model</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Compelling brand narratives</li>
+                        <li>Bartender education & empowerment</li>
+                        <li>Community building</li>
+                        <li>Grassroots advocacy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 11: Story Architecture -->
+        <div class="slide">
+            <div class="slide-number">11</div>
+            <h2>Every Brand Needs a Story Bartenders Can Tell</h2>
+            <h3>Brand Narrative Framework</h3>
+            <div class="content-box">
+                <ul>
+                    <li><strong>Origin Story:</strong> Why was this brand created? What's the founder's journey?</li>
+                    <li><strong>Craft Credentials:</strong> What makes the liquid special? Unique aging, ingredients, process</li>
+                    <li><strong>Local/Regional Roots:</strong> Portland heritage, Pacific Northwest ingredients, community ties</li>
+                    <li><strong>Underdog Narrative:</strong> Rescued brands, second chances, David vs. Goliath positioning</li>
+                </ul>
+            </div>
+            <div class="highlight-box" style="margin-top: 35px; font-size: 19px;">
+                Example: "Azunia Black - A 2-year añejo that proves patience beats marketing budgets. This is what tequila tastes like when you don't rush it."
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 12: Bartender Engagement -->
+        <div class="slide">
+            <div class="slide-number">12</div>
+            <h2>BSC Bartender Academy & Activation</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Education & Certification</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Monthly tastings in 9 markets</li>
+                        <li>Product knowledge training</li>
+                        <li>Bartender certification program</li>
+                        <li>Insider access & special pricing</li>
+                        <li>Make them feel like discoverers</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Competition & Recognition</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Quarterly cocktail competitions</li>
+                        <li>$500-1,000 prizes per state</li>
+                        <li>Winners featured on social media</li>
+                        <li>Winning cocktails in recipe books</li>
+                        <li>Creates advocacy & content</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-box" style="margin-top: 35px;">
+                <strong>Grassroots Ambassador Network:</strong> 2-3 influential bartenders per market receive free product + $200-500/month stipend to host tastings and create authentic advocacy. Far more cost-effective than traditional field marketing.
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 13: Easy Yes Toolkit -->
+        <div class="slide">
+            <div class="slide-number">13</div>
+            <h2>Making It Easy for Bartenders to Say Yes</h2>
+            <h3>Complete Activation Package</h3>
+            <div class="content-box">
+                <ul>
+                    <li><strong>Cocktail Spec Sheets:</strong> Ready-to-use recipes with cost breakdowns showing pour profit</li>
+                    <li><strong>POS Materials:</strong> Beautiful table tents, menu inserts, shelf talkers—drop-in ready</li>
+                    <li><strong>Social Content:</strong> Professional photos/videos bartenders can repost</li>
+                    <li><strong>Sample Program:</strong> 50ml bottles for risk-free tasting</li>
+                    <li><strong>Bartender's Cut:</strong> Exclusive single barrels selected by notable bartenders—creates prestige</li>
+                </ul>
+            </div>
+            <div class="highlight-box" style="margin-top: 35px;">
+                The Profit Angle: Show bartenders your pricing beats big brands while delivering higher pour margins
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 14: 90-Day GTM -->
+        <div class="slide">
+            <div class="slide-number">14</div>
+            <h2>Go-to-Market: First 90 Days</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phase</th>
+                        <th>Timeline</th>
+                        <th>Key Activities</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Story Development</strong></td>
+                        <td>Month 1</td>
+                        <td>Write brand narratives, create education materials, identify key bartenders</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Soft Launch</strong></td>
+                        <td>Month 2</td>
+                        <td>Intimate tastings with 10-15 influential bartenders per market, recruit ambassadors</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Full Activation</strong></td>
+                        <td>Month 3</td>
+                        <td>Launch competitions, distribute POS materials, amplify on social, scale program</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 style="margin-top: 35px;">Budget-Friendly Tactics</h3>
+            <div class="content-box">
+                <ul style="font-size: 17px;">
+                    <li>Trade product for exposure at bartender guild events</li>
+                    <li>User-generated content strategy (bartenders post, we amplify)</li>
+                    <li>Piggyback on regional industry events vs. creating our own</li>
+                </ul>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 15: Portfolio Selling -->
+        <div class="slide">
+            <div class="slide-number">15</div>
+            <h2>Multi-Brand Portfolio Selling Advantage</h2>
+            <div class="content-box">
+                <h3>Single Rep, Complete Bar Program</h3>
+                <p style="font-size: 19px; line-height: 1.8; margin-bottom: 25px; font-weight: 300;">
+                    Our diverse portfolio (bourbon, whiskey, gin, vodka, tequila) allows a single sales representative to offer bartenders a complete solution across all major categories—well drinks to premium pours.
+                </p>
+            </div>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Operational Efficiency</h3>
+                    <ul style="font-size: 16px;">
+                        <li>One relationship, five+ brands</li>
+                        <li>Consolidated ordering & delivery</li>
+                        <li>Cross-selling opportunities</li>
+                        <li>Volume incentives across portfolio</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Bartender Value</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Story for every spirit category</li>
+                        <li>Flexibility in menu building</li>
+                        <li>Access to brand team</li>
+                        <li>Exclusive releases & allocations</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 35px;">
+                Philosophy: Make bartenders look like heroes, not salespeople
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 16: Competitive Advantages -->
+        <div class="slide">
+            <div class="slide-number">16</div>
+            <h2>Why BSC Wins These Deals</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Operational Expertise</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Proven asset-light model</li>
+                        <li>Established co-packer relationships</li>
+                        <li>Distribution infrastructure in place</li>
+                        <li>Fast execution (60-120 day integration)</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Market Position</h3>
+                    <ul style="font-size: 16px;">
+                        <li>Limited competition for distressed brands</li>
+                        <li>Strategic buyers want assets, not brands</li>
+                        <li>Private equity avoiding spirits</li>
+                        <li>BSC can close quickly with certainty</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="highlight-box" style="margin-top: 45px;">
+                Repositioning brands that were over-invested in for immediate profitability
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 17: Team -->
+        <div class="slide">
+            <div class="slide-number">17</div>
+            <h2>Management Team</h2>
+            <div class="content-box">
+                <h3>Proven Leadership</h3>
+                <ul>
+                    <li>Successfully executed reverse merger and public company formation (October 2024)</li>
+                    <li>Acquired 53% ownership stake in BLNE (August 2025)</li>
+                    <li>Established asset-light operating model with co-packer relationships</li>
+                    <li>Built distribution network across 9 states with Park Street Marketplace</li>
+                    <li>Portfolio includes Azunia Tequila, Portland Potato Vodka, Burnside brands</li>
+                </ul>
+            </div>
+            <div class="highlight-box" style="margin-top: 35px;">
+                Track Record: Successfully navigated public company formation to private, and positioned BSC to capitalize on market dislocation
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 18: Investment Highlights -->
+        <div class="slide">
+            <div class="slide-number">18</div>
+            <h2>Investment Highlights</h2>
+            <div class="two-column">
+                <div class="column">
+                    <h3>Market Opportunity</h3>
+                    <ul style="font-size: 17px;">
+                        <li>Industry distress creating acquisition targets</li>
+                        <li>Premium brands at 20-40% of value</li>
+                        <li>Limited competition for assets</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Competitive Moat</h3>
+                    <ul style="font-size: 17px;">
+                        <li>Asset-light model = 70-80% cost advantage</li>
+                        <li>Distribution infrastructure in place</li>
+                        <li>Bartender-first GTM strategy</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="two-column" style="margin-top: 35px;">
+                <div class="column">
+                    <h3>Proven Model</h3>
+                    <ul style="font-size: 17px;">
+                        <li>Westward case study validates thesis</li>
+                        <li>Fast integration (60-120 days)</li>
+                        <li>Immediate profitability post-acquisition</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Capital Deployment</h3>
+                    <ul style="font-size: 17px;">
+                        <li>$10M targeting 3-4 brand acquisitions</li>
+                        <li>Focus: bourbon, whiskey, gin, vodka</li>
+                        <li>24-month path to $4-6M EBITDA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 19: The Ask -->
+        <div class="slide">
+            <div class="slide-number">19</div>
+            <h2>Investment Opportunity</h2>
+            <div class="content-box" style="text-align: center; padding: 55px;">
+                <div class="stat">$10 Million</div>
+                <div class="stat-label" style="font-size: 24px; margin-bottom: 45px;">Growth Capital Raise</div>
+                <p style="font-size: 21px; line-height: 1.9; margin: 35px 0; font-weight: 300;">
+                    Partner with Bridgetown Spirits Corp to build a diversified portfolio of premium spirits brands through opportunistic acquisitions of distressed assets.
+                </p>
+                <p style="font-size: 19px; color: #999; margin-top: 35px; font-weight: 300;">
+                    Deploy capital over 12-18 months as attractive opportunities emerge in bankruptcy, distressed sales, and strategic exits across bourbon, whiskey, gin, and vodka categories.
+                </p>
+            </div>
+            <div class="highlight-box" style="margin-top: 45px; font-size: 21px;">
+                Target Returns: 3-4x invested capital within 3-5 years
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+
+        <!-- Slide 20: Contact -->
+        <div class="slide">
+            <div class="slide-number">20</div>
+            <h2>Next Steps</h2>
+            <div class="content-box" style="padding: 65px; text-align: center;">
+                <h1 style="font-size: 44px; margin-bottom: 30px;">Bridgetown Spirits Corp</h1>
+                <p style="font-size: 22px; line-height: 2.2; color: #999; font-weight: 300;">
+                    Premium Craft Spirits & RTD Cocktails<br>
+                    <span class="portland-accent">Portland's Distillery Row Heritage</span><br>
+                    Experiential Brands and Artisanal Products
+                </p>
+                <div style="margin-top: 70px; padding-top: 45px; border-top: 2px solid #d4691e;">
+                    <p style="font-size: 19px; color: #888; font-weight: 300;">
+                        For investment inquiries and additional materials
+                    </p>
+                </div>
+            </div>
+            <div class="brand-watermark">Bridgetown Spirits Corp</div>
+        </div>
+    </div>
+
+    <div class="navigation">
+        <button class="nav-btn" id="prevBtn" onclick="navigate(-1)">← Prev</button>
+        <button class="nav-btn" id="nextBtn" onclick="navigate(1)">Next →</button>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(n) {
+            slides.forEach((slide, index) => {
+                slide.style.display = index === n ? 'flex' : 'none';
+            });
+            
+            document.getElementById('prevBtn').disabled = n === 0;
+            document.getElementById('nextBtn').disabled = n === slides.length - 1;
+            
+            window.scrollTo(0, 0);
+        }
+        
+        function navigate(direction) {
+            currentSlide += direction;
+            currentSlide = Math.max(0, Math.min(currentSlide, slides.length - 1));
+            showSlide(currentSlide);
+        }
+        
+        showSlide(0);
+        
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') navigate(-1);
+            if (e.key === 'ArrowRight') navigate(1);
+        });
+    </script>
+</body>
+</html>
